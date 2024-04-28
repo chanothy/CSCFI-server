@@ -21,7 +21,6 @@ const userSchema = new mongoose.Schema({
 
   role: {
     type: String,
-    required: true,
   },
 
   // this is what you input into the authenticator
