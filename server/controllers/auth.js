@@ -25,8 +25,7 @@ const login = async (req, res) => {
     { _id: user._id, role: user.role },
     process.env.userKEY
   );
-  res.cookie("session-token", token, { httpOnly: true });
-  return res.json({ login: true });
+  return res.json({ login: true, token: token });
 };
 
 const registration = async (req, res) => {
